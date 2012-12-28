@@ -1,3 +1,7 @@
+Tested On
+-----
+Ubuntu 12.04, 12.10
+
 Configure
 -----------
 Configure by setting the values of variables at the head of raspi-qemu.sh
