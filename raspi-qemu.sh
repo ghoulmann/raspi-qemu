@@ -1,11 +1,13 @@
 #!/bin/bash -ex
 
+########Settings############
 raspbian_zip="2012-12-16-wheezy-raspbian.zip"
 raspbian_img="2012-12-16-wheezy-raspbian.img"
 raspbian_url="http://files.velocix.com/c1410/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip"
-target="/home/rik/Desktop/Raspberry_Pi"
+target="~/Desktop/Raspberry_Pi"
 kernel_url="http://xecdesign.com/downloads/linux-qemu/kernel-qemu"
 swapsize="1G"
+############################
 #create target
 create_target()
 {
