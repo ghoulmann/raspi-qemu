@@ -22,3 +22,15 @@ In raspbian:
 `sudo mkswap /dev/sdb
 sudo swapon /dev/sdb`
 ...to make use of swap.
+
+What It Does
+------------
+When launched by raspi-qemu.sh install:
+*creates /opt/Raspberry_Pi
+*Downloads Raspbian from Raspberry Pi/Downloads to /opt/Raspberry_Pi
+*Unzips Raspbian to /opt/Raspberry_Pi
+*Downloads qemu-kernal to /opt/Raspberry_Pi
+
+Use raspi-qemu to launch the Raspi Emulation.
+
+Customize by editing variables at the top of raspi-qemu.sh
