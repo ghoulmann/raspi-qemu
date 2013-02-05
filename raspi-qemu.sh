@@ -4,7 +4,7 @@
 raspbian_zip="2012-12-16-wheezy-raspbian.zip"
 raspbian_img="2012-12-16-wheezy-raspbian.img"
 raspbian_url="http://files.velocix.com/c1410/images/raspbian/2012-12-16-wheezy-raspbian/2012-12-16-wheezy-raspbian.zip"
-target="~/Desktop/Raspberry_Pi"
+target="/opt/Raspberry_Pi"
 kernel_url="http://xecdesign.com/downloads/linux-qemu/kernel-qemu"
 swapsize="1G"
 ############################
@@ -62,7 +62,7 @@ privs ()
 
 do_it ()
 {
-	cd $target && qemu-system-arm -kernel kernel-qemu -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1" -hda $raspbian_img -hdb swap
+	cd $target && qemu-system-arm -kernel kernel-qemu -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1" -hda ./$raspbian_img -hdb swap
 }
 
 if [[ $# == 1 ]]; then
